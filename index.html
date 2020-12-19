@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptar Y Desencriptar</title>
+</head>
+<body style="text-align: center;">
+    <h1>ENCRIPTAR Y DESENCRIPTAR (AIMAR)</h1>
+    <hr/>
+    <form onsubmit="return false;">        
+        <p>
+            <label>Escriba el texto:</label>
+            <input type="text" id="txtTexto" required/>
+        </p>
+        <p>
+            <button onclick="handleEncriptar()">
+                Encriptar
+            </button>
+            <button onclick="handleDesencriptar()">
+                Desencriptar
+            </button>
+            <button onclick="limpiar()">
+                Limpiar
+            </button>
+        </p>
+    </form>
+
+    <hr/>
+    <h2>Resultado: </h2>
+    <p>
+        <input type="text" style="width: 400px;" id="txtResultado" readonly/>
+    </p>
+
+    <script src="app.js"></script>
+</body>
+</html>
